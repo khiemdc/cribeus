@@ -1,0 +1,32 @@
+.sidenav-container {
+  /* height: 10%; */
+}
+
+.logo {
+  height: 100px;
+  background-color: #ffffff;
+}
+.sidenav {
+  width: 200px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+}
+
+
+.header {
+  height: 250px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 150px;
+  background: rgba(0,0,255,.1);
+}
+
+.rightSidenav_toggle {
+  width: 300px;
+  height: 50px;
+  background-color: #eee;
+}

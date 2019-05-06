@@ -1,0 +1,30 @@
+// Navbar
+.appName{
+    font-size: 150%;
+}
+div {
+    overflow: inherit;
+}
+a{
+    text-decoration: none;
+    font-size: 100%;
+    white-space: normal;
+}
+button{
+    margin: 0 80px 0 50px;
+    background-color: #ffffff;
+    color:darkcyan;
+    font-size: 120%;
+    min-width: min-content;
+}
+.example-icon {
+    padding: 0 14px;
+  }
+
+  .example-spacer {
+    flex: 0 0 auto;
+  }
+  .mat-sidenav-content{
+      font-size: 110%;
+      text-align: center;
+  }
