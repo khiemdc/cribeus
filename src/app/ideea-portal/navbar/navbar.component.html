@@ -1,0 +1,20 @@
+<div style="height: 10vh;"> 
+  <mat-toolbar color="primary">
+      <div fxShow="true" fxHide.gt-sm="false">
+          <app-menu-button></app-menu-button>
+      </div>
+      <a class="appName" href="http://thebuffalogroup.com/">
+          <span><img src="./assets/images/TheBuffaloGroup.png" class="image-brand"></span>
+      </a>
+      <span class="example-spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true">
+        <a mat-button routerLink="document-import" routerLinkActive="active">
+          <span class="valign-center"><i class="fa fa-slideshare" aria-hidden="true"></i></span><span class="nav-caption">Submit Idea</span></a>
+        <a mat-button routerLink="/unassigned-files" routerLinkActive="active">
+          <i class="fa fa-tasks" aria-hidden="true"></i><span class="nav-caption">Manage Idea</span></a>
+        <a mat-button routerLink="/documents-list" routerLinkActive="active">
+          <i class="fa fa-phone" aria-hidden="true"></i><span class="nav-caption">Contact</span></a>
+      </div>
+    </mat-toolbar>
+</div>
+

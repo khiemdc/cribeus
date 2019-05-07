@@ -1,0 +1,83 @@
+<mat-card style="margin: 50px;">
+  <app-menu-button></app-menu-button><h3><span><a href="#">Cribeus</a>/Profiles</span></h3>
+</mat-card>
+
+<div class="container">
+  <!-- <app-navbar title="User Profile"></app-navbar> -->
+  <div class="row" style="margin-top: 30px">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header">
+          <i class="material-icons">perm_identity</i>
+        </div>
+        <div class="card-content">
+          <h4 class="card-title">Edit Profile -
+            <small class="category">Complete your profile</small>
+          </h4>
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="First Name" [(ngModel)]="firstName" value="Ci" name="firstName">
+                </mat-form-field>
+              </div>
+              <div class="col-md-6">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="Last Name" [(ngModel)]="lastName" value="Clia" name="lastName">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="Address">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="City">
+                </mat-form-field>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="Country">
+                </mat-form-field>
+              </div>
+              <div class="col-md-4">
+                <mat-form-field color="accent">
+                  <input matInput type="text" placeholder="Postcode">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label class="textarea-label">Social Media</label>
+                <mat-form-field color="accent">
+                  <textarea matInput placeholder=""></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row action-btn">
+              <button md-raised-button type="submit" class="btn btn-rose">UPDATE PROFILE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-5">
+      <div class="card right-profile">
+        <div class="profile">
+          <img src="../../../assets/images/PaulCourtney.jpg" alt="Paul Courtney"/>
+        </div>
+        <br>
+        <h6>President / co-founder</h6>
+        <h4>Paul Courtney</h4><br>
+        <p>Mr. Courtney has led successful Federal contracting efforts ranging in size from $200k to over $250 million. He has successfully run 26 Prime Federal Contracts, 13 at the Defense Intelligence Agency, and has never lost a re-compete of a prime contract.</p>
+        <p>Mr. Courtney began The Buffalo Group with his business partner Paul Schlee in order to provide the highest level of service to the federal government.</p>
+        <!-- <button mat-raised-button class="btn btn-rose btn-round">Edit Profile</button> -->
+      </div>
+    </div>
+  </div>
+</div>

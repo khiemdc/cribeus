@@ -1,5 +1,47 @@
+.ideea-container {
+  height: 100%;
+  background-color: #ffffff!important;
+  text-align: center;
+}
+
+
 .mat-toolbar.mat-primary {
     background-color: #ffffff;
     position: sticky;
     top: 0;
   }
+
+.iDDEA-logo {
+  width: 500px !important;
+  /* margin: 40px 0 10px 20px; */
+  margin-left: 180px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.2);
+}
+hr.hr-line {
+  margin: 40px auto;
+}
+.fa-lightbulb-o {
+    font-size: 50px;
+    color: #F23C50 !important;
+}
+.fa-user {
+ font-size: 50px;
+ color: #36B1BF;
+ }
+ .fa-file-code-o {
+     font-size: 50px;
+     color: #FFCB05 !important;
+ }
+ .fa-check-circle {
+     font-size: 50px;
+     color: #39B005 !important;
+ }

@@ -1,0 +1,10 @@
+<mat-card style="background-color: #F4F2FF; margin:0em; width: 100%">
+    <mat-card-title style="color:navy">{{ cardName }}</mat-card-title>
+    <mat-card-content>
+        <div *ngFor="let cardDataListItem of cardData" style="width: 100%; text-align: left; margin: 20px; height: 30px;">
+            <div style="font-size: 18px; font-weight: 400; margin-top: 30px; color: navy">
+                <mat-chip color="accent" selected style="padding:10px; font-size: 14px; margin-right:10px">{{ getDisplayValue(cardDataListItem) }}</mat-chip>{{ getDisplayText(cardDataListItem) }}
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

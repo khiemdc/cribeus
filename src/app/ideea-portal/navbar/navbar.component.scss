@@ -1,0 +1,84 @@
+// Navbar
+.mat-toolbar.mat-primary {
+    background-color: #ffffff;
+    color: rgb(44, 96, 138);
+    position: sticky;
+    top: 0;
+    text-transform: uppercase;
+    box-shadow:  0 2px 2px 0 rgba(133, 39, 39, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
+  }
+
+.mat-button { 
+    // border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    height: 40px !important;
+    padding: 0 30px;
+}
+
+.mat-toolbar .mat-button:hover {
+    background-color: #ffffff!important;
+    opacity: 1 !important;
+}
+
+.mat-toolbar a:hover { background-color: transparent!important; text-decoration: none!important; opacity: 1 !important;}
+
+.appName{
+    font-size: 150%;
+    margin: 0 10% 0 2%;
+}
+div {
+    overflow: inherit;
+}
+.image-brand {
+    padding: 0 !important;
+    // margin: -20px 50px -30px 0px; 
+    /* width: 200px !important; */
+    height: 60px !important;
+    
+  } 
+
+  img {
+    vertical-align: top;
+  }
+
+a{
+    text-decoration: none;
+    font-size: 100%;
+    white-space: normal;
+}
+button{
+    min-width: min-content;
+    padding: 6px;
+    margin-left: 3%;
+    margin-right: 5%;
+    background-color: white;
+    color: rgb(44, 96, 138);
+    cursor: pointer; 
+    font-size: 120%; 
+    font-weight: 600; 
+    border-radius: 4px; 
+    text-transform: none;
+}
+.example-icon {
+    padding: 0 14px;
+  }
+
+  .example-spacer {
+    flex: 0 0 auto;
+  }
+  .mat-sidenav-content{
+      font-size: 110%;
+      text-align: center;
+  }
+  .valign-center {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+  }
+  .nav-caption {
+    display: inline-block;
+    padding-left: 5px;
+  }
+  .mat-button {
+      margin: 0 2%;
+  }

@@ -3,11 +3,37 @@
 }
 
 .logo {
-  height: 100px;
+  margin: 10px 0 20px 0px;
+  padding: 15px 0 30px 0px!important;
   background-color: #ffffff;
+  color: #000!important;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
 }
+
+.logo img{
+  width: 72px;
+  position: absolute;
+  top: 4px;
+  left: 105px;
+}
+
+.divider{
+  content: '';
+  position: relative;
+  height: 1px;
+  left: 15px;
+  width: calc(100% - 30px);
+  background-color: rgba(100, 92, 92, 0.5);
+  margin-bottom: 12%!important;
+}
+
 .sidenav {
-  width: 200px;
+  width: 240px;
+  padding: 15px;
+  box-shadow:  0 2px 2px 0 rgba(133, 39, 39, 0.14), 0 3px 1px -2px rgba(153, 153, 153, 0.2), 0 1px 5px 0 rgba(153, 153, 153, 0.12);
 }
 
 .mat-toolbar.mat-primary {
@@ -16,17 +42,19 @@
 }
 
 
-.header {
-  height: 250px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 150px;
-  background: rgba(0,0,255,.1);
+.mat-list-item {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 .rightSidenav_toggle {
   width: 300px;
   height: 50px;
   background-color: #eee;
+}
+
+.nav-caption{
+  font-size: 18px;
+  display: inline-block;
+  padding-left: 6px;
 }

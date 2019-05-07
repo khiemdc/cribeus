@@ -1,6 +1,66 @@
-<mat-toolbar color="primary">
-  <span style="color: #000;"><app-menu-button></app-menu-button></span>
-</mat-toolbar>
-<p>
-  ideea-portal works!
-</p>
+<div class="ideaa-container">
+    <app-ideea-navbar></app-ideea-navbar>
+
+    <section class="section-2">
+        <div class="container" style="margin-bottom:80px;">
+          <a class="iDDEA-logo"><img class="iDDEA-logo animated fadeInUp" src="./assets/images/DIA-IDEEA2.png" /></a>
+        </div>
+        <div class="container" style="margin-bottom:40px;">
+          <div class="row">
+            <div class="col-3">
+              <div class="card card-deck" routerLink="/ideas">
+                <div class="card-body text-center"><i class="fa fa-lightbulb-o" aria-hidden="true"></i>           
+                  <div class="card-title text-center ">
+                    <h5 style="padding:10px;">IDEAS <span>35</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card  card-deck">
+                <div class="card-body text-center"><i class="fa fa-user" aria-hidden="true"></i>            
+                  <div class="card-title text-center">
+                    <h5 style="padding:10px;">CONTRIBUTORS <span>5</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card  card-deck">
+                <div class="card-body text-center"><i class="fa fa-file-code-o" aria-hidden="true"></i>            
+                  <div class="card-title text-center ">
+                    <h5 style="padding:10px 0;">TIED TO EXISTING <span>20</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card  card-deck">
+                <div class="card-body text-center"><i class="fa fa-check-circle green-text" aria-hidden="true"></i>            
+                  <div class="card-title text-center ">
+                    <h5 style="padding:10px;">APPROVED <span>5</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="text-center col-6 hr-line">
+        <div class="container-fluid" style="margin-top:80px; height: 300px">
+          <div class="row">
+              <div class="col-lg-4" style="text-align: center; width: 90%">
+                  <app-dashboard-card-list cardName="Recent Ideas" [cardData]="recentIdeas"></app-dashboard-card-list>
+              </div>
+              <div class="col-lg-4" style="text-align: center; width: 90%">
+                  <app-dashboard-card-list cardName="Buzzworthy Ideas" [cardData]="buzzworthyIdeas"></app-dashboard-card-list>
+              </div>
+              <div class="col-lg-4" style="text-align: center; width: 90%">
+                  <app-dashboard-card-list cardName="Top Contributors" [cardData]="topIdeaContributors"></app-dashboard-card-list>
+              </div>
+            </div>
+        </div>
+      </section>
+      <hr class="text-center col-6 hr-line">
+         
+</div>
+

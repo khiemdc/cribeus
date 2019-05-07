@@ -1,22 +1,96 @@
-<div style="height: 100vh;"> 
-    <mat-toolbar color="primary">
-        <div fxShow="true" fxHide.gt-sm="false">
-            <app-menu-button></app-menu-button>
+<div class="riptide-container">
+    <app-riptide-navbar></app-riptide-navbar>
+    <div style="width: 100%">
+        <div *ngFor="let thing of fileCount" style="display:inline-block; margin: 40px">
+            <app-dashboard-card-simple [card]="thing"></app-dashboard-card-simple>
         </div>
-        <button mat-button class="appName" routerLink="/">
-          <span>RipTide</span>
-        </button>
-        <span class="example-spacer"></span>
-        <div fxShow="true" fxHide.lt-md="true">
-          <a mat-button routerLink="/imported">Impotred</a>
-          <a mat-button routerLink="/prices">Prices</a>
-          <a mat-button routerLink="/start-page">Start page</a>
-          <a mat-button routerLink="/offer">Offer</a>
-          <a mat-button routerLink="/contact">Contact</a>
-        </div>
-      </mat-toolbar>
-      
-      
-          Riptide Content
-      
     </div>
+    <br><br>
+    <mat-grid-list cols="10">
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/Africa-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/Central-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/European-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/IndoPacific-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+    <mat-card class="card">
+        <img class="command-img" src="./assets/images/Northern-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>  
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/Southern-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/Cyber-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/Special-Operations-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/Strategic-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="card">
+        <img class="command-img" src="./assets/images/Transcom-Command.png" aria-hidden="true" />
+        <mat-card-content>
+          <mat-card-title>USAFRICOM <span>| 10</span></mat-card-title>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <div style="margin-top: 10%;">
+    <app-footer></app-footer>
+  </div>
+</div>
+
+
