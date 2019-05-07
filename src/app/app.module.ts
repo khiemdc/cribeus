@@ -12,6 +12,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FigurecardComponent } from './shared/figurecard/figurecard.component';
+import { MsgIconBtnComponent } from './shared/msgiconbtn/msgiconbtn.component';
 import { RiptideComponent } from './riptide/riptide.component';
 import { RiptideNavbarComponent } from './riptide/navbar/navbar.component';
 import { DashboardCardSimpleComponent } from './riptide/dashboard-card-simple/dashboard-card-simple.component';
@@ -33,6 +34,7 @@ import { ProfileComponent } from './profile/profile.component';
       RiptideComponent,
       RiptideNavbarComponent,
       DashboardCardSimpleComponent,
+      MsgIconBtnComponent,
       RiptideFooterComponent,
       IdeeaPortalComponent,
       IdeeaNavbarComponent,
