@@ -1,4 +1,4 @@
-<mat-sidenav-container class="sidenav-container">
+<mat-sidenav-container class="sidenav-container" style="background-color: #eee;">
   <mat-sidenav
     #sidenav
     class="sidenav"
@@ -19,8 +19,8 @@
         <mat-icon class="material-icons">assignment</mat-icon><span class="nav-caption">RipTide</span></a>
       <a mat-list-item routerLink='/ideea-portal'(click)="sidenav.toggle()">
         <mat-icon class="material-icons">perm_data_setting</mat-icon><span class="nav-caption">iDEEA Portal</span></a>
-      <a mat-list-item routerLink='/rating'>
-        <mat-icon>star_rate</mat-icon><span class="nav-caption">Rating</span></a>
+      <a mat-list-item routerLink='/doober-finder' (click)="sidenav.toggle()">
+        <mat-icon>language</mat-icon><span class="nav-caption">Doober Finder</span></a>
       <a mat-list-item routerLink='/profile'>
         <mat-icon>supervisor_account</mat-icon><span class="nav-caption">Profile</span></a>
     </mat-nav-list>

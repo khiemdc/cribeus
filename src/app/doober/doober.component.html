@@ -1,0 +1,17 @@
+<app-doober-navbar></app-doober-navbar>
+<br><br>
+<div [fxLayout]="'row wrap'" fxLayout.xs="column wrap" fxLayoutWrap fxLayoutAlign="start none">
+    <mat-card class="card-picture" *ngFor="let file of files" [routerLink]="[]">
+      <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+        <span fxFlex="80%">{{file.name}}</span>
+        <mat-icon fxFlex="10%">mode_edit</mat-icon>
+        <mat-icon fxFlex="10%">delete</mat-icon>
+      </mat-card-title>
+      <img mat-card-image [src]="file.imagePath">
+      <app-rating [rating]='file.rating' [itemId]='file.id' (ratingClick)='ratingComponentClick($event)'></app-rating>
+      <br /><br /><br />
+      <mat-card-footer fxLayoutAlign="left" >{{file.rating}} Stars</mat-card-footer>
+    </mat-card>
+</div>
+
+  

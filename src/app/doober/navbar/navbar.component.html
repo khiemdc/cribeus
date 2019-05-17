@@ -1,0 +1,133 @@
+<section class="navbar-container"> 
+<mat-toolbar>
+<div fxLayout="row wrap" fxLayoutAlign="center center" class="layout-wrapper" >
+  <mat-nav-list style="display: inline-flex;">
+    <div fxShow="true" fxHide.gt-sm="false">
+      <app-menu-button></app-menu-button>
+    </div>
+    <a mat-list-item routerLink="/owner">
+      <img src="./assets/images/TheBuffaloGroup.png" class="img-fluid flex-center image-brand">
+    </a>
+  </mat-nav-list>
+  <mat-nav-list>
+    <a mat-list-item routerLink="/home">
+      <i class="fa fa-diamond navbar-delp"></i> <span class="doorber-finder">doober finder</span>
+    </a>
+    <a mat-list-item routerLink="/search" class="search">
+      <form>
+        <div>
+          <input type="search" placeholder="Search...">
+          <button type="submit" value=""><img src="./assets/images/search.png" alt="Search"></button>
+        </div>
+      </form>
+    </a>
+  </mat-nav-list>
+  </div>          
+</mat-toolbar>
+<mat-toolbar>
+  <div fxLayout="row wrap" fxLayoutAlign="center right" class="layout-wrapper float-right">
+    <mat-nav-list style="display: inline-flex;">
+      <a mat-list-item routerLink="/home">
+        <mat-icon>rate_review</mat-icon> <span class="nav-caption">Review</span>
+      </a>
+      <a mat-list-item routerLink="/owner">
+        <mat-icon>stars</mat-icon> <span class="nav-caption">Rating</span>
+      </a>
+      <a mat-list-item routerLink="#">
+        <mat-icon>cloud_upload</mat-icon><span class="nav-caption">Upload</span>
+      </a>
+    </mat-nav-list>
+  </div>
+</mat-toolbar>
+<hr style="margin-top: 2%;">
+
+<mat-toolbar class="flex-container">
+  <div class="item1">
+      <mat-form-field class="select-category" appearance="outline" floatLabel="never">
+          <mat-label class="category-label">Select Category</mat-label>
+          <mat-select class="category-label">
+            <mat-option value="category1">Category 1</mat-option>
+            <mat-option value="category2">Category 2</mat-option>
+            <mat-option value="category3">Category 3</mat-option>
+          </mat-select>
+        </mat-form-field>
+  </div>
+  <div class="item2">
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+          <mat-button-toggle value="bold">Recent</mat-button-toggle>
+          <mat-button-toggle value="italic">Top 100</mat-button-toggle>
+          <mat-button-toggle value="underline">Most Viewed</mat-button-toggle>
+        </mat-button-toggle-group>
+  </div>
+  <div class="item3">
+      <a routerLink="/level-1">
+        <span style="font-size:16px">Level 1</span><span style="margin: 0 8px; font-size: 20px;">|</span>
+      </a>
+      <a routerLink="/level-2">
+        <span>Level 2</span><span style="margin: 0 8px; font-size: 20px;">|</span>
+      </a>
+      <a routerLink="/level-3">
+        <span>Level 3</span><span style="margin: 0 8px; font-size: 20px;">|</span>
+      </a>
+      <a routerLink="/level-4">
+        <span>Level 4</span>
+      </a>
+  </div>  
+  <div class="item4">
+      
+        <span style="margin-right:10px; margin-top:5px;">Sort By:</span>
+      <mat-form-field class="select-category" appearance="outline" floatLabel="never">
+        <mat-label class="category-label">Most Popular</mat-label>
+        <mat-select class="category-label">
+          <mat-option value="category1">Category 1</mat-option>
+          <mat-option value="category2">Category 2</mat-option>
+          <mat-option value="category3">Category 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+    
+  </div> 
+</mat-toolbar>
+
+<!-- <mat-toolbar>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" class="layout-wrapper">
+    <mat-nav-list style="display: inline-flex;">
+      <mat-form-field class="select-category" appearance="outline" floatLabel="never">
+        <mat-label class="category-label">Select Category</mat-label>
+        <mat-select class="category-label">
+          <mat-option value="category1">Category 1</mat-option>
+          <mat-option value="category2">Category 2</mat-option>
+          <mat-option value="category3">Category 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="bold">Recent</mat-button-toggle>
+        <mat-button-toggle value="italic">Top 100</mat-button-toggle>
+        <mat-button-toggle value="underline">Most Viewed</mat-button-toggle>
+      </mat-button-toggle-group>
+      <a mat-list-item routerLink="/level-1">
+        <span style="margin-left:10em; font-size: 16px;">Level 1</span><span style="margin: 0 8px; font-size: 20px;">|</span>
+      </a>
+      <a mat-list-item routerLink="/level-2">
+        <span style="margin-left:-30px; font-size: 16px;">Level 2</span><span style="margin: 0 8px; font-size: 20px;">|</span>
+      </a>
+      <a mat-list-item routerLink="/level-3">
+        <span style="margin-left:-30px; font-size: 16px;">Level 3</span><span style="margin: 0 8px; font-size: 20px;">|</span>
+      </a>
+      <a mat-list-item routerLink="/level-4">
+        <span style="margin-left:-30px; font-size: 16px;">Level 4</span>
+      </a>
+      <span style="position: absolute; right: 10px;"><span style="margin-right:10px; font-size: 16px; margin-top: 5px;">Sort By:</span>
+      <mat-form-field class="select-category"  appearance="outline" floatLabel="never">
+        <mat-label class="category-label">Most Popular</mat-label>
+        <mat-select class="category-label">
+          <mat-option value="category1">Category 1</mat-option>
+          <mat-option value="category2">Category 2</mat-option>
+          <mat-option value="category3">Category 3</mat-option>
+        </mat-select>
+      </mat-form-field></span>
+    </mat-nav-list>
+   </div>
+  </mat-toolbar> -->
+
+  <hr>
+</section>

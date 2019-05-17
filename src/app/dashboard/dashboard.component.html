@@ -11,9 +11,8 @@
         <app-msgiconbtn icon="notifications" number="5" [matMenuTriggerFor]="menu"></app-msgiconbtn>
         <button mat-icon-button><i class="material-icons icon-btn" style="font-size:24px;">person</i></button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>Mike John responded to your email</button>
+          <button mat-menu-item>Daven has sent a request to your email</button>
           <button mat-menu-item>You have 5 new tasks</button>
-          <button mat-menu-item>You're now friend with Andrew</button>
           <button mat-menu-item>Another Notification</button>
           <button mat-menu-item>Another One</button>
         </mat-menu>
@@ -23,79 +22,128 @@
 </mat-card>
   
 <div class="grid-container">
-    <mat-grid-list cols="2" rowHeight="350px">
-      <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
-        <mat-card class="dashboard-card">
-          <mat-card-header>
-            <mat-card-title>
-              {{card.title}}
-              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-                <mat-icon>more_vert</mat-icon>
-              </button>
-              <mat-menu #menu="matMenu" xPosition="before">
-                <button mat-menu-item>Expand</button>
-                <button mat-menu-item>Remove</button>
-              </mat-menu>
-            </mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="dashboard-card-content">
-            <!-- <div>{{card.content}}</div> -->
-            <div class="container-fluid">
-              <!-- <app-navbar title="Dashboard"></app-navbar> -->
-              <div class="row" style="margin-top: 50px">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                  <app-figurecard
-                    title="184"
-                    headerIcon="weekend"
-                    category="Imported"
-                    footContent="Get More Space..."
-                    footerIcon="warning"
-                    linearColor="linear-gradient(60deg, #ffa726, #fb8c00)"
-                    boxShadow="0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4)">
-                  </app-figurecard>
+  <mat-grid-list cols="2" rowHeight="2.2:1">
+      <mat-grid-tile rowspan="1" colspan="2">
+          <mat-card class="dashboard-card">
+              <mat-card-header>
+                <mat-card-title>
+                  <!-- {{card.title}} -->
+                  <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #menu2="matMenu" xPosition="before">
+                    <button mat-menu-item>Expand</button>
+                    <button mat-menu-item>Remove</button>
+                  </mat-menu>
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="dashboard-card-content">
+                <!-- <div>{{card.content}}</div> -->
+                <div class="container-fluid">
+                  <!-- <app-navbar title="Dashboard"></app-navbar> -->
+                  <div class="row" style="margin-top: 50px">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <app-figurecard
+                        title="184"
+                        headerIcon="weekend"
+                        category="Imported"
+                        footContent="Get More File..."
+                        footerIcon="warning"
+                        linearColor="linear-gradient(60deg, #ffa726, #fb8c00)"
+                        boxShadow="0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4)">
+                      </app-figurecard>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <app-figurecard
+                        title="75"
+                        headerIcon="equalizer"
+                        category="Reviewed"
+                        footContent="Reviewer Profile"
+                        footerIcon="local_offer"
+                        linearColor="linear-gradient(60deg, #ef5350, #e53935)"
+                        boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4)">
+                      </app-figurecard>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <app-figurecard
+                        title="34"
+                        headerIcon="store"
+                        category="Approved"
+                        footContent="Last 24 Hours"
+                        footerIcon="date_range"
+                        linearColor="linear-gradient(60deg, #66bb6a, #43a047)"
+                        boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4)">
+                      </app-figurecard>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <app-figurecard
+                        title="21"
+                        headerIcon="mic"
+                        category="Rejected"
+                        footContent="Comments"
+                        footerIcon="update"
+                        linearColor="linear-gradient(60deg, #26c6da, #00acc1)"
+                        boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4)">
+                      </app-figurecard>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                  <app-figurecard
-                    title="75"
-                    headerIcon="equalizer"
-                    category="Reviewed"
-                    footContent="Google Analytics"
-                    footerIcon="local_offer"
-                    linearColor="linear-gradient(60deg, #ef5350, #e53935)"
-                    boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(244, 67, 54, 0.4)">
-                  </app-figurecard>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                  <app-figurecard
-                    title="34"
-                    headerIcon="store"
-                    category="Approved"
-                    footContent="Last 24 Hours"
-                    footerIcon="date_range"
-                    linearColor="linear-gradient(60deg, #66bb6a, #43a047)"
-                    boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(76, 175, 80, 0.4)">
-                  </app-figurecard>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                  <app-figurecard
-                    title="21"
-                    headerIcon="mic"
-                    category="Rejected"
-                    footContent="Just Updated"
-                    footerIcon="update"
-                    linearColor="linear-gradient(60deg, #26c6da, #00acc1)"
-                    boxShadow="0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 188, 212, 0.4)">
-                  </app-figurecard>
-                </div>
-              </div>
-            </div>
-          </mat-card-content>
-        </mat-card>
+              </mat-card-content>
+            </mat-card>
       </mat-grid-tile>
-  </mat-grid-list>        
-</div>
-        
+      </mat-grid-list>
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile rowspan="1" colspan="1">
+          <mat-card class="dashboard-card">
+              <mat-card-header>
+                <mat-card-title>
+                  <!-- {{card.title}} -->
+                  <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #menu2="matMenu" xPosition="before">
+                    <button mat-menu-item>Expand</button>
+                    <button mat-menu-item>Remove</button>
+                  </mat-menu>
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="dashboard-card-content" style="margin-left: 10%; margin-top: 5%;">
+                <tbg-pie-chart [data]="pieChartApi"></tbg-pie-chart>
+              </mat-card-content>
+            </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-card class="dashboard-card">
+              <mat-card-header>
+                <mat-card-title>
+                  <!-- {{card.title}} -->
+                  <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu2" aria-label="Toggle menu">
+                    <mat-icon>more_vert</mat-icon>
+                  </button>
+                  <mat-menu #menu2="matMenu" xPosition="before">
+                    <button mat-menu-item>Expand</button>
+                    <button mat-menu-item>Remove</button>
+                  </mat-menu>
+                </mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="dashboard-card-content">
+                <tbg-bar-chart [data]="barChartApi"></tbg-bar-chart>
+              </mat-card-content>
+            </mat-card>  
+      </mat-grid-tile>
+    </mat-grid-list>
+
+
+    <!-- <tbg-line-chart [data]="lineChartApi"></tbg-line-chart>
+
+    <tbg-bar-chart [data]="barChartApi"></tbg-bar-chart>
+
+    <tbg-pie-chart [data]="pieChartApi"></tbg-pie-chart>
+
+    <tbg-donut-chart [data]="donutChartApi"></tbg-donut-chart> -->
+
+</div>      
   
+
   
-    
-  
+

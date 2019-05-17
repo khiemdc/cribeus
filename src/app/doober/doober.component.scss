@@ -1,0 +1,38 @@
+.doober-container {
+    background-color: #eee!important;
+    text-align: center;
+    margin-bottom: -50px!important;
+    padding-bottom: -50px!important;
+    overflow-x: hidden;
+  }
+
+.mat-toolbar.mat-primary {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+
+.img {
+    width: 100%;
+    margin-bottom: 18%;
+  }
+  .container {
+      padding-left: 30px!important;
+    min-height: 100%;
+    width: 100%!important;
+    display: flex;
+    flex-flow:row wrap;
+    align-items:flex-end;
+    align-content:flex-end;
+    justify-content: flex-end;
+  }
+  .card-picture {
+    width: 22.5%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+  }
+  
+  .search-form {
+    width: 90%;
+  }
