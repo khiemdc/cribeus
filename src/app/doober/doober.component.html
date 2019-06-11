@@ -1,17 +1,45 @@
 <app-doober-navbar></app-doober-navbar>
 <br><br>
 <div [fxLayout]="'row wrap'" fxLayout.xs="column wrap" fxLayoutWrap fxLayoutAlign="start none">
-    <mat-card class="card-picture" *ngFor="let file of files" [routerLink]="[]">
-      <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
-        <span fxFlex="80%">{{file.name}}</span>
-        <mat-icon fxFlex="10%">mode_edit</mat-icon>
-        <mat-icon fxFlex="10%">delete</mat-icon>
+    <mat-card fxFlex="0 1 calc(24.6% - 32px)"
+    fxFlex.lt-md="0 1 calc(50% - 32px)"
+    fxFlex.lt-sm="100%" style="margin-bottom: 3%; margin-left: 1.8%;" *ngFor="let file of files" [routerLink]="[]">
+      <mat-card-title [style.height]="'20%'"
+      [style.minWidth]="'100%'" fxLayout.gt-xs="row" fxLayout.xs="column">
+        <span style="font-size: 22px;" fxFlex="80%">{{ file.name | ellipsis : 80 }}</span>
+        <a href="#"><mat-icon fxFlex="10%">mode_edit</mat-icon> </a>
+        <a style="color:brown" href="#"><mat-icon fxFlex="10%">delete</mat-icon></a>
       </mat-card-title>
-      <img mat-card-image [src]="file.imagePath">
-      <app-rating [rating]='file.rating' [itemId]='file.id' (ratingClick)='ratingComponentClick($event)'></app-rating>
-      <br /><br /><br />
-      <mat-card-footer fxLayoutAlign="left" >{{file.rating}} Stars</mat-card-footer>
+      <img mat-card-image 
+      fxFlex="0 1 calc(height=20%)"
+      fxFlex.lt-md="0 1 calc(50% - 32px)"
+      fxFlex.lt-sm="100%"
+       [src]="file.imagePath">
+      <app-rating [rating]='file.rating' [itemId]='file.id' (ratingClick)='ratingComponentClick($event)'></app-rating>    
+      <br><br><br>
+      <mat-card-title fxLayoutAlign="left">{{file.rating}} Stars</mat-card-title>
     </mat-card>
 </div>
 
-  
+<br><br><br>
+
+
+
+
+<!-- <div 
+  fxLayout="row wrap" 
+  fxLayout.lt-sm="column" 
+  fxLayoutGap="12px" 
+  fxLayoutAlign="flex-start">
+
+	<ng-container *ngFor="let file of files">
+
+		<app-card
+      fxFlex="0 1 calc(22.5% - 32px)"
+      fxFlex.lt-md="0 1 calc(50% - 32px)"
+      fxFlex.lt-sm="100%"
+      [header]="file.name"
+      [content]="file.imagePath"></app-card>
+
+	</ng-container>
+</div> -->

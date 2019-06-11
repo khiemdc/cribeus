@@ -30,6 +30,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { DooberComponent } from './doober/doober.component';
 import { DooberNavbarComponent } from './doober/navbar/navbar.component';
 import { RatingComponent } from './doober/rating/rating.component';
+import { EllipsisPipe } from './shared/ellipsis.pipe';
+import { CardComponent } from './shared/card/card.component';
 
 @NgModule({
    declarations: [
@@ -49,7 +51,9 @@ import { RatingComponent } from './doober/rating/rating.component';
       ProfileComponent,
       DooberComponent,
       DooberNavbarComponent,
-      RatingComponent
+      RatingComponent,
+      EllipsisPipe,
+      CardComponent
    ],
    imports: [
       BrowserModule,

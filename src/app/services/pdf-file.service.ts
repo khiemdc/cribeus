@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { PdfFile } from '../shared/lookup-interfaces/pdf-file';
+import { IRating } from '../shared/lookup-interfaces/rating';
 import { ICountry } from '../shared/lookup-interfaces/country';
 import { Observable } from 'rxjs';
 

@@ -9,12 +9,12 @@ import { PdfFileService } from '../services/pdf-file.service';
   styleUrls: ['./doober.component.scss']
 })
 export class DooberComponent implements OnInit {
-  
+
   public files: PdfFile[] = [];
-  
+
   ratingClicked: number;
   itemIdRatingClicked: string;
-  
+
   constructor(private pdfFileService: PdfFileService, private http: HttpClient) { }
 
   ngOnInit() {
@@ -29,13 +29,12 @@ export class DooberComponent implements OnInit {
       });
     }
 
-  ratingComponentClick(clickObj: any): void {
-    const item = this.files.find(((i: any) => i.id === clickObj.itemId));
-    if (!!item) {
-      item.rating = clickObj.rating;
-      this.ratingClicked = clickObj.rating;
-      this.itemIdRatingClicked = item.name;
+    ratingComponentClick(clickObj: any): void {
+      const item = this.files.find(((i: any) => i.id === clickObj.itemId));
+      if (!!item) {
+        item.rating = clickObj.rating;
+        this.ratingClicked = clickObj.rating;
+        this.itemIdRatingClicked = item.name;
+      }
     }
-
-  }
 }
