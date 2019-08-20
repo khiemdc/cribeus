@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ChartsModule } from 'ng2-charts';
-import { TbgChartsModule } from 'Tbg-charts-library';
+// import { TbgChartsModule } from 'Tbg-charts-library';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './sidenav/menu-button.component';
 import { LayoutModule } from '@angular/cdk/layout';
@@ -72,7 +72,7 @@ import { CardComponent } from './shared/card/card.component';
       MatSidenavModule,
       MatIconModule,
       MatListModule,
-      TbgChartsModule
+    //   TbgChartsModule
    ],
    schemas: [
       NO_ERRORS_SCHEMA

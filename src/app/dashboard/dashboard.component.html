@@ -107,8 +107,17 @@
                   </mat-menu>
                 </mat-card-title>
               </mat-card-header>
-              <mat-card-content class="dashboard-card-content" style="margin-left: 10%; margin-top: 5%;">
-                <tbg-pie-chart [data]="pieChartApi"></tbg-pie-chart>
+              <mat-card-content class="dashboard-card-content" style="margin-left: 2%; margin-top: 1%;">
+                <!-- <tbg-pie-chart [data]="pieChartApi"></tbg-pie-chart> -->
+                <div><canvas baseChart 
+                  height="125" 
+                  [data]="pieChartData" 
+                  [labels]="pieChartLabels" 
+                  [chartType]="pieChartType" 
+                  [colors]="pieChartColors" 
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+                </div>
               </mat-card-content>
             </mat-card>
       </mat-grid-tile>
@@ -127,14 +136,21 @@
                 </mat-card-title>
               </mat-card-header>
               <mat-card-content class="dashboard-card-content">
-                <tbg-bar-chart [data]="barChartApi"></tbg-bar-chart>
+                  <div><canvas baseChart 
+                    height="125" 
+                    [data]="barChartData" 
+                    [labels]="barChartLabels" 
+                    [colors]="barChartColors" 
+                    [chartType]="barChartType"
+                    (chartHover)="chartHovered($event)" 
+                    (chartClick)="chartClicked($event)"></canvas>
+                  </div>
               </mat-card-content>
             </mat-card>  
       </mat-grid-tile>
     </mat-grid-list>
 
-
-    <!-- <tbg-line-chart [data]="lineChartApi"></tbg-line-chart>
+  <!-- <tbg-line-chart [data]="lineChartApi"></tbg-line-chart>
 
     <tbg-bar-chart [data]="barChartApi"></tbg-bar-chart>
 
@@ -143,6 +159,7 @@
     <tbg-donut-chart [data]="donutChartApi"></tbg-donut-chart> -->
 
 </div>      
+
   
 
   
