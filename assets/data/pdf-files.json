@@ -7,8 +7,7 @@
       "filePath": "../../assets/pdf/foreignfighters.pdf",
       "imagePath": "../../assets/images/afghanistan.jpg",
       "country": "Afghanistan",
-      "rating": 4,
-      "rating_2": 2
+      "rating": 3
     }, 
     {
       "id": "2",
@@ -18,7 +17,8 @@
       "filePath": "../../assets/pdf/economic.pdf",
       "imagePath": "../../assets/images/syria.png",
       "country": "Syria, Iraq",
-      "rating": 3
+      "rating": 5
+          
     },
     {
         "id": "3",
@@ -28,7 +28,7 @@
         "filePath": "../../assets/pdf/syria.pdf",
         "imagePath": "../../assets/images/pakistan.jpg",
         "country": "Pakistan",
-        "rating": 4
+        "rating": 2
       },
       {
         "id": "4",
@@ -38,7 +38,7 @@
         "filePath": "../../assets/pdf/iraq.pdf",
         "imagePath": "../../assets/images/iraq.jpg",
         "country": "Iran",
-        "rating": 2
+        "rating": 4
       },
       {
         "id": "5",
@@ -48,7 +48,7 @@
         "filePath": "../../assets/pdf/isischild.pdf",
         "imagePath": "../../assets/images/syria.jpg",
         "country": "Syria",
-        "rating": 2
+        "rating":5
       },
       {
         "id": "6",
@@ -58,7 +58,7 @@
         "filePath": "../../assets/pdf/foreignfighters.pdf",
         "imagePath": "../../assets/images/foreign_fighters.jpg",
         "country": "Iraq",
-        "rating": 3
+        "rating": 2
       },
       {
         "id": "7",
@@ -68,7 +68,7 @@
         "imagePath": "./assets/images/north-korea.jpg",
         "filePath": "../../assets/pdf/afghanistan-controversies.pdf",
         "country": "North Korea",
-        "rating": 4
+        "rating": 1
       },
       {
         "id": "8",
@@ -78,6 +78,6 @@
         "imagePath": "../../assets/images/iran.jpg",
         "filePath": "../../assets/pdf/alqaida.pdf",
         "country": "Afghanistan",
-        "rating": 2
+        "rating": 3
       }
 ]
